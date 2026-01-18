@@ -1,148 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Online Exam Portal</title>
-    <link src="index.html">
-    <script>
-    function login(){
-        window.location.href = "index.html";
-    }
-  </script>
+<meta charset="UTF-8">
+<title>EXAMIX | Online Exam Portal</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
+<script>
+function start(){ window.location.href="Programming.html"; }
+function test(){ window.location.href="ojt.html"; }
+function exam(){ window.location.href="maths.html"; }
+</script>
 
-        
-        .header {
-            background-color: #1a73e8;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        
-        .container {
-            display: flex;
-            margin: 20px;
-        }
-
-       
-        .left {
-            width: 50%;
-            background-color: white;
-            padding: 20px;
-            margin-right: 10px;
-            border-radius: 5px;
-        }
-
-        .left h2 {
-            color: #1a73e8;
-        }
-
-        .left p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-     
-        .right {
-            width: 50%;
-            background-color: white;
-            padding: 20px;
-            margin-left: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        
-        .right img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial;
+    background:linear-gradient(to right,#eef3fb,#f9fbff);
+}
 
 
-        input {
-            width: 80%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+header{
+    background:linear-gradient(to right,#1a73e8,#0f5bd6);
+    color:white;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        button {
-            width: 85%;
-            padding: 10px;
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
 
-        button:hover {
-            background-color: #0f5bd6;
-        }
+.logo span{
+    font-size:14px;
+    display:block;
+    font-weight:normal;
+    opacity:0.9;
+}
 
-        
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #ddd;
-            margin-top: 20px;
-            background-color:#0f5bd6;
-            color: white;
-            font-size: 20px;
-        }
-    
-    </style>
+header button{
+    background:white;
+    color:#1a73e8;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+
+.main{
+    padding:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    text-align:center;
+}
+
+.card h2{
+    margin:15px 0;
+    color:#1a73e8;
+}
+
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card button{
+    margin:20px;
+    width:85%;
+    padding:12px;
+    background:linear-gradient(to right,#1a73e8,#0f5bd6);
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+
+footer{
+    background:#1a73e8;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+    font-size:15px;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="header">
-        Online Examination Portal
+<header>
+    <div class="logo">
+        EXAMIX
+        <span>Online Examination Portal</span>
     </div>
+    <button>Support</button>
+</header>
 
-    <div class="container"> 
-        <div class="left">
-            <h2>Exam Information</h2>
-            <p><b>Exam Name:</b> Semester Examination</p>
-            <p><b>Duration:</b> 2 Hours</p>
-            <p><b>Total Marks:</b> 100</p>
-            <p><b>Instructions:</b></p>
-            <ul>
-                <li>No negative marking</li>
-                <li>Do not refresh the page</li>
-                <li>Login before exam start time</li>
-            </ul>
+<div class="main">
+    <div class="cards">
+
+        <div class="card">
+            <h2>Programming</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQffywjyc0W5tejXoaAJ1j5hT4uxlO8W_TEgQ&s">
+            <button onclick="start()">Start Exam</button>
         </div>
 
-        <div class="right">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUGjjS1oHJT1uJvcip7_XUy9jAaGW9WP37Q&s" alt="Student Photo">
+        <div class="card">
+            <h2>OJT</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyVQhTERdq5cd_nrUZZOi8DbPZocOl7mzwQ&s">
+            <button onclick="test()">Start Exam</button>
+        </div>
 
-            <h2>Student Login</h2>
-
-            <input type="text" placeholder="User ID"><br>
-            <input type="password" placeholder="Password"><br><br>
-
-            <button onclick="login()">Login</button>
+        <div class="card">
+            <h2>Mathematics</h2>
+            <img src="https://www.drkishoresratnamschools.com/wp-content/uploads/2024/03/importance-of-mathematics-for-students-and-why-learning-math-is-essential-1024x576-1.webp">
+            <button onclick="exam()">Start Exam</button>
         </div>
 
     </div>
+</div>
 
-    <div class="footer">
-        <b>Best Of Luck for Your Exam</b>
-    </div>
+<footer>
+©️ 2026 EXAMIX • Secure Online Examination Platform
+</footer>
 
 </body>
 </html>
