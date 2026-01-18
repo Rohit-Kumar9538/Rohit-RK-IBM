@@ -2,12 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        
+        .header {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        
+        .container {
+            width: 40%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0f5bd6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
 </head>
+
 <body>
-   <div>
-     <h1 class="heading">FINAL SUBMIT</h1>
-   </div>
+
+    <div class="header">
+        Online Exam Platform
+    </div>
+
+    <div class="container">
+        <h2>Student Feedback Form</h2>
+
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>User ID</label>
+        <input type="text" placeholder="Enter your user ID">
+
+        <label>Exam Experience</label>
+        <select>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>Your Feedback</label>
+        <textarea rows="4" placeholder="Write your feedback here..."></textarea>
+
+        <a href="Thanks.html"><button>Final Submit</button></a>
+    </div>
+
+    <div class="footer">
+        Thank you for attending the online exam
+    </div>
+
 </body>
 </html>

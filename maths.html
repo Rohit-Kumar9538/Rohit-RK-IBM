@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Discrete Mathematics Exam</title>
+    <script>
+        function submit(){
+            window.location.href="submit.html"
+        }
+    </script>
 
     <style>
         body {
@@ -52,8 +57,6 @@
 
 <div class="container">
     <h1>Discrete Mathematics Test</h1>
-
-    <!-- Question 1 -->
     <div class="question">
         <p>1. Which of the following is a set?</p>
         <div class="options">
@@ -63,8 +66,6 @@
             <input type="radio"> Good players
         </div>
     </div>
-
-    <!-- Question 2 -->
     <div class="question">
         <p>2. If A = {1, 2, 3}, how many elements are in set A?</p>
         <div class="options">
@@ -74,8 +75,6 @@
             <input type="radio"> 4
         </div>
     </div>
-
-    <!-- Question 3 -->
     <div class="question">
         <p>3. Which symbol represents union of two sets?</p>
         <div class="options">
@@ -85,8 +84,6 @@
             <input type="radio"> =
         </div>
     </div>
-
-    <!-- Question 4 -->
     <div class="question">
         <p>4. Which of the following is a proposition?</p>
         <div class="options">
@@ -96,8 +93,6 @@
             <input type="radio"> How are you?
         </div>
     </div>
-
-    <!-- Question 5 -->
     <div class="question">
         <p>5. If n(A) = 5, what does it represent?</p>
         <div class="options">
@@ -108,7 +103,7 @@
         </div>
     </div>
 
-    <button>Submit</button>
+    <button onclick="submit()">Submit</button>
 </div>
 
 </body>
