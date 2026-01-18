@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function start(){
+        window.location.href ="Programming.html";
+    }
+    function test(){
+     window.location.href="ojt.html"
+    }
+    function exam(){
+      window.location.href="Maths.html"
+    }
+  </script>
+  <style>
+    .rit {
+      /* display: flex;
+      justify-content: center;
+      align-items:center;
+      justify-content: space-between; */
+      display: grid;
+      grid-template-columns: 4fr 4fr 4fr;
+       align-items:center;
+      justify-content: space-between;
+      border: 2px solid black;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .rit div{
+      border: 1px solid green;
+      width: 400px;
+      height: 400px;
+    }
+    .rit div h1{
+      text-align: center;
+    }
+    .rit div p{
+      text-align: center;
+    }
+    h1{
+      font-size: 30px;
+      /* color: White; */
+      /* background-color: #1a73e8; */
+    }
+    .heading{
+      font-size: 28px;
+      text-align: center;
+      background-color: #1a73e8;
+      color: white;
+      padding: 0px;
+      height: 50px;
+      padding: 5px;
+      font-weight: bold;
+      margin-top: 68px;
+    }
+    .button{
+      font-size: 40px;
+    }
+    .footer{
+      text-align: center;
+      font-size: 40px;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      background-color:#1a73e8;;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1>Online Exam Portal</h1>
+    </div>
+  </header>
+  <div class="rit">
+  <!-- Subject Math -->
+  <div>
+    <h1>Programming</h1>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQffywjyc0W5tejXoaAJ1j5hT4uxlO8W_TEgQ&s" width="100%" height="70%">
+     <button onclick="start()">Start Test</button>
+  </div>
+  <!-- Subject Hindi -->
+   <div>
+    <h1>OJT</h1>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyVQhTERdq5cd_nrUZZOi8DbPZocOl7mzwQ&s" width="100%" height="70%">
+    <button onclick="test()">Start Test</button>
+   </div>
+<!-- Subject--3 -->
+ <div>
+      <h1>Maths</h1>
+      <img src="https://www.drkishoresratnamschools.com/wp-content/uploads/2024/03/importance-of-mathematics-for-students-and-why-learning-math-is-essential-1024x576-1.webp" width="100%" height="70%">
+      <button onclick="exam()">Start Test</button>
+     </div>
+   </div> 
+ <div class="footer">
+      Best Of Luck for Your Exam
+ </div>  
+</body>
+</html>
